@@ -1,0 +1,6 @@
+event_type,event_label,r_rb_centrum,r_rb_vesten,delta_r_rb,z_diff,p_fischer,H_S4_confirmed
+is_event_day,Alle events,0.0564,0.0632,-0.0068,-0.3367,0.6318,False
+is_football_day,Voetbal,-0.1667,0.2074,-0.3741,-5.1601,1.0,False
+is_festival_day,Festival,-0.3866,-0.0771,-0.3095,-2.3951,0.9917,False
+is_kermis_day,Kermis,0.1079,0.0575,0.0504,2.2827,0.0112,True
+is_carnival_day,Carnaval,-0.1095,0.0849,-0.1944,-2.3457,0.9905,False
