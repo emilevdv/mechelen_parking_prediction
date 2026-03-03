@@ -1,0 +1,9 @@
+Feature,Type,Encoding,Basis_hypothese,Statistisch_bewijs,Prioriteit,Referentie
+hour,Cyclisch,sin(2π·h/24) + cos(2π·h/24),"H-T1, H-T2",ACF lag24 centrum=-0.378,🟡 MEDIUM,Zhang et al. (2020); Wan et al. (2023)
+day_type_3,Categorisch,One-hot (weekday / saturday / sunday_holiday),H-T1,Weekdag bimodaal: 3 pieken (centrum),🔴 HOOG,Channamallu et al. (2024)
+occupancy_lag_1h,Lag-feature,"Raw float [0, 1]",H-T1,ACF lag1 centrum=0.664,🔴 HOOG,Fokker et al. (2021); Wan et al. (2023)
+occupancy_lag_24h,Lag-feature,"Raw float [0, 1]",H-T2,ACF lag24 centrum=-0.378,🔴 HOOG,Fokker et al. (2021); Wan et al. (2023)
+occupancy_lag_168h,Lag-feature,"Raw float [0, 1]",H-T2,ACF lag168 centrum=0.345,🔴 HOOG,Fokker et al. (2021); Wan et al. (2023)
+month,Cyclisch,sin(2π·m/12) + cos(2π·m/12),H-T1 (seizoen cel 04),Seizoensrange zie fig_seasonal_tier.png,🟡 MEDIUM,Balmer et al. (2021)
+year_dummy,Categorisch,2020=0 / 2023–2024=1 (NIET ordinaal),H-T4,"MW p=0.00e+00, effect=klein",🟡 MEDIUM,Niu et al. (2023)
+tier,Categorisch / Stratificatie,One-hot OF aparte modellen per tier,H-T1 (structurele tiersverschillen aangetoond),Zie fig_heatmap_tier.png + fig_hourly_daytype.png,🔴 HOOG,Wang & Li (2024); Balmer et al. (2021)

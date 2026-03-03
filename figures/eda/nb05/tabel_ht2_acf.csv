@@ -1,0 +1,3 @@
+tier,n_obs,sig_band_95,acf_lag1,acf_lag24,acf_lag48,acf_lag168,lag24_significant,lag168_significant,sincos_encoding_justified,H_T2_confirmed
+centrum,15356,0.0158,0.6642,-0.3776,-0.0829,0.3446,True,True,True,True
+vesten_of_rand,17229,0.0149,0.6427,-0.3836,-0.0782,0.2413,True,True,True,True

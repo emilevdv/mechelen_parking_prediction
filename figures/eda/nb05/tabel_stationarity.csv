@@ -1,0 +1,7 @@
+name,n_obs,adf_stat,adf_p,adf_lags,adf_reject_h0,kpss_stat,kpss_p,kpss_lags,kpss_reject_h0,conclusion
+centrum — Ruw,17544,-7.7157,0.0,44,True,2.1636,0.01,57,True,TREND-STATIONAIR (differentiatie aanbevolen)
+centrum — Δ₁ (eerste orde),17543,-32.0713,0.0,44,True,0.002,0.1,61,False,STATIONAIR
+"centrum — Δ₂₄ (seizoen, lag=24)",17520,-25.7668,0.0,44,True,0.0061,0.1,60,False,STATIONAIR
+vesten_of_rand — Ruw,17544,-9.19,0.0,44,True,0.6683,0.01,65,True,TREND-STATIONAIR (differentiatie aanbevolen)
+vesten_of_rand — Δ₁ (eerste orde),17543,-31.4515,0.0,44,True,0.0041,0.1,88,False,STATIONAIR
+"vesten_of_rand — Δ₂₄ (seizoen, lag=24)",17520,-24.8622,0.0,44,True,0.0144,0.1,60,False,STATIONAIR
