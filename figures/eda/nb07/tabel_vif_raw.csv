@@ -1,0 +1,13 @@
+feature,vif,status
+temp_c,1.32,✅ acceptabel
+sun_duration_min,1.247,✅ acceptabel
+is_school_vacation,1.076,✅ acceptabel
+month,1.059,✅ acceptabel
+is_event_day,1.045,✅ acceptabel
+year_dummy,1.036,✅ acceptabel
+wind_speed_ms,1.035,✅ acceptabel
+hour,1.032,✅ acceptabel
+is_national_holiday,1.025,✅ acceptabel
+precip_mm,1.023,✅ acceptabel
+weekday_int,1.016,✅ acceptabel
+total_capacity,1.003,✅ acceptabel
