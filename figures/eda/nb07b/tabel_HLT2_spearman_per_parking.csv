@@ -1,0 +1,8 @@
+factor,parking_id,tier,rho_st,rho_lt,delta
+is_event_day,P Grote Markt,centrum,0.0,-0.0096,0.0096
+is_event_day,P Hoogstraat,centrum,0.0338,-0.2942,0.328
+is_event_day,P Kathedraal,centrum,0.0127,-0.016,0.0287
+is_event_day,P Keerdok,vesten_of_rand,0.0814,-0.0724,0.1539
+is_event_day,P Komet,vesten_of_rand,0.1809,-0.0496,0.2305
+is_event_day,P Maarten,vesten_of_rand,0.1663,-0.0347,0.201
+is_event_day,P Tinel,vesten_of_rand,0.0483,-0.3064,0.3546
