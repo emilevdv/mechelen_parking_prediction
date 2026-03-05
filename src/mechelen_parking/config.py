@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import os
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Iterable
 
@@ -37,39 +37,24 @@ class ProjectPaths:
 @dataclass(frozen=True)
 class EDAStyle:
     tier_order: tuple[str, ...] = ("centrum", "vesten", "rand")
-    tier_colors: dict[str, str] = None
-    parking_colors: dict[str, str] = None
+    tier_colors: dict[str, str] = field(default_factory=lambda: {"centrum": "#2563EB", "vesten": "#16A34A", "rand": "#DC2626"})
+    parking_colors: dict[str, str] = field(default_factory=lambda: {
+        "P1": "#1E3A5F",
+        "P2": "#2563EB",
+        "P3": "#60A5FA",
+        "P4": "#14532D",
+        "P5": "#16A34A",
+        "P6": "#86EFAC",
+        "P7": "#7F1D1D",
+        "P8": "#DC2626",
+        "P9": "#FCA5A5",
+        "P10": "#78716C",
+    })
     figsize_wide: tuple[int, int] = (14, 5)
     figsize_square: tuple[int, int] = (8, 8)
     figsize_grid: tuple[int, int] = (16, 10)
     alpha: float = 0.75
     fontsize: int = 11
-
-    def __post_init__(self) -> None:
-        if self.tier_colors is None:
-            object.__setattr__(
-                self,
-                "tier_colors",
-                {"centrum": "#2563EB", "vesten": "#16A34A", "rand": "#DC2626"},
-            )
-        if self.parking_colors is None:
-            object.__setattr__(
-                self,
-                "parking_colors",
-                {
-                    "P1": "#1E3A5F",
-                    "P2": "#2563EB",
-                    "P3": "#60A5FA",
-                    "P4": "#14532D",
-                    "P5": "#16A34A",
-                    "P6": "#86EFAC",
-                    "P7": "#7F1D1D",
-                    "P8": "#DC2626",
-                    "P9": "#FCA5A5",
-                    "P10": "#78716C",
-                },
-            )
-
 
 def get_default_paths() -> ProjectPaths:
     paths = ProjectPaths.from_env()
