@@ -1,0 +1,12 @@
+,driver,effectrichting,vorm,stabiliteit_segmenten,feature_engineering_use
+0,precip_mm,overwegend zwak negatief (na month-correctie bijna nul in longterm),niet-lineair/drempelmatig (extreme neerslag afwijkend),laag-matig; verschilt per dataset/season,bins/thresholds nuttiger dan lineaire term
+1,temp_c,"seizoensafhankelijk; positief in meerdere contexten, omkeringen mogelijk",interactief + deels niet-lineair,matig; duidelijk season- en datasetafhankelijk,temp × season / temp × month (eventueel splines of bins)
+2,wind_speed_ms / wind_gusts_ms,positief (sterkere wind ↔ hogere occupancy),drempelmatig (p90-effect duidelijk),matig-goed over datasets,high-wind indicators + continue component
+3,sun_duration/radiation,meestal positief in deze data,"niet-lineair mogelijk, maar geen negatief zomerpatroon",matig; datasetafhankelijk in grootte,continue + season interacties; geen vaste negatieve assumptie
+4,humidity_pct,negatief,grotendeels monotoon associatief,matig-goed,continue term + mogelijke interactie met temp
+5,holiday flags,meestal negatief t.o.v. non-holiday,discreet + tierafhankelijk,matig; national vs other verschilt,behoud aparte holidaytypes + tier interactie
+6,school vacation,"negatief, maar grootte verschilt per tier",discreet + interactief,matig,vacation flag + vacation × tier
+7,event_day / event types,heterogeen; teken kan verschillen per dataset/type/tier,sterk interactief,laag-matig,event flags op type-niveau + tier/dataset interacties
+8,event_scale_max / n_concurrent_events,in longterm vaker negatief met hogere schaal; shortterm zwakker/inconsistent,"niet-uniform, mogelijk drempelmatig",laag-matig,ordinale bins + interactie met tier/dataset
+9,football kickoff timing,"pre-kickoff hoger, post-kickoff lager (vooral shortterm)",tijdvensterprofiel,"matig in shortterm, zwakker in longterm",event-time windows (pre/during/post) i.p.v. enkel event dummy
+10,data_confidence,"niet direct extern effect, maar confounding-indicator",kwaliteits/contextflag,belangrijk (estimated ≈ event-context),gebruik voor sensitiviteitsanalyse of kwaliteitsweging

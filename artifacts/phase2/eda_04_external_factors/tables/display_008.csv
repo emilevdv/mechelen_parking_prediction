@@ -1,0 +1,5 @@
+,dataset_label,variable,p90_threshold,pct_high,delta_high_minus_low
+0,shortterm,wind_speed_ms,5.25,10.0011,0.0388
+1,shortterm,wind_gusts_ms,10.36,10.0443,0.0376
+2,longterm,wind_speed_ms,5.06,10.0787,0.0509
+3,longterm,wind_gusts_ms,10.07,10.0229,0.0485

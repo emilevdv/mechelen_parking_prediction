@@ -1,0 +1,9 @@
+,dataset_label,parking_type,variable,n,mean,median,std,iqr,skew,q95,iqr_outlier_pct
+0,longterm,Car Parking,number_of_occupied_spaces,46643,24.8831,23.0,15.0532,23.0,0.4437,53.0,0.0
+1,shortterm,Car Parking,number_of_occupied_spaces,284524,60.9654,42.0,58.8174,66.0,1.6075,181.0,4.7834
+2,longterm,Car Parking,number_of_spaces_override,46643,59.9436,60.0,24.9832,19.0,0.0223,100.0,36.9209
+3,shortterm,Car Parking,number_of_spaces_override,284524,160.8176,120.0,107.0223,142.0,1.2889,416.0,0.0
+4,longterm,Car Parking,occupancy_rate,46643,0.4372,0.38,0.2538,0.4262,0.4837,0.8906,0.0
+5,shortterm,Car Parking,occupancy_rate,284524,0.3894,0.3365,0.2764,0.4086,0.5709,0.9294,0.0
+6,longterm,Car Parking,total_capacity,46643,209.8508,130.0,149.056,65.0,1.5054,516.0,18.7595
+7,shortterm,Car Parking,total_capacity,284524,216.0418,155.0,124.4745,131.0,1.2698,516.0,9.2572

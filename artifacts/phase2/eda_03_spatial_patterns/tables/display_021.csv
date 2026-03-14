@@ -1,0 +1,8 @@
+,hypothesis,status,evidence_summary
+0,H-S1,supported,Centrum heeft in beide datasets hogere gemiddelde bezetting en hogere piekquantielen dan rand/outer aggregaten.
+1,H-S2,partially supported,"Negatieve capaciteit-relatie is duidelijk in longterm, maar zwak/inconclusief in shortterm op parkingniveau."
+2,H-S3,partially supported,"Binnen-tier correlaties liggen boven tussen-tier, maar het verschil is relatief beperkt."
+3,H-S4,partially supported,"Eventeffecten variëren per tier en eventtype, maar richting en grootte zijn niet stabiel over datasets."
+4,H-S5,partially supported,"Bij centrumsaturatie stijgt outer occupancy descriptief mee (sterker in shortterm, zwakker in longterm)."
+5,H-S6,supported,"Parking-specifieke verschillen binnen dezelfde tier zijn groot op niveau, piek en volatiliteit."
+6,H-S7,inconclusive,"Afstand-similarity signaal is duidelijker in shortterm, maar niet robuust in longterm met beperkte N."

@@ -1,0 +1,4 @@
+,comparison,hour_profile_corr,hour_profile_spearman,mean_diff_2020_minus_ref
+0,2020_vs_2023,-0.9234,-0.8843,-0.0818
+1,2020_vs_2024,0.9263,0.9252,0.0405
+2,2020_vs_2023_2024_ref,0.1249,0.3304,-0.0207

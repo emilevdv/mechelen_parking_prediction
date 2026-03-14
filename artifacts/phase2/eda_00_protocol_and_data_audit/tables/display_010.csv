@@ -1,0 +1,8 @@
+feature_group,missing_pct,n_present_columns,missing_columns
+calendar,38.39051265349222,9,
+weather,14.218484205198855,18,
+events,6.87024644669694,14,
+temporal,0.0,8,
+occupancy,0.0,3,
+spatial,0.0,8,
+quality_flags,0.0,6,

@@ -1,0 +1,36 @@
+{
+  "capacity_bin_edges": [
+    109.0,
+    129.0,
+    255.0,
+    516.0
+  ],
+  "parking_levels": [
+    "P Bruul",
+    "P Grote Markt",
+    "P Hoogstraat",
+    "P Kathedraal",
+    "P Keerdok",
+    "P Lamot",
+    "P Tinel",
+    "P Veemarkt"
+  ],
+  "day_class_levels": [
+    "weekday_regular",
+    "weekend_regular",
+    "school_vacation",
+    "holiday",
+    "event_day"
+  ],
+  "external_fit_params": {
+    "precip_positive_q50": 0.26,
+    "precip_positive_q90": 1.57,
+    "wind_speed_high_thr_q90": 5.64,
+    "wind_gust_high_thr_q90": 11.0,
+    "n_concurrent_events_cap_q95": 1
+  },
+  "event_cascade": {
+    "clip_hours": 72,
+    "sentinel": 73
+  }
+}

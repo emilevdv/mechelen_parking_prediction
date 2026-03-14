@@ -1,0 +1,7 @@
+,dataset_label,tier_temporal,rho_scale,p_scale,rho_concurrent,p_concurrent,n_event_rows
+0,shortterm,all,0.016328,4.9e-05,-0.019041,2e-06,61801
+1,shortterm,centrum,0.051049,0.0,-0.055499,0.0,32350
+2,shortterm,vesten_of_rand,-0.010826,0.06319,0.02767,2e-06,29451
+3,longterm,all,-0.04329,0.0,-0.032167,9.2e-05,14782
+4,longterm,centrum,-0.060772,0.0,-0.059259,0.0,7924
+5,longterm,vesten_of_rand,-0.023975,0.047101,-0.014287,0.236796,6858

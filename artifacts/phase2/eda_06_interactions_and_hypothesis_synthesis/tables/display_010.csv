@@ -1,0 +1,11 @@
+,dataset_label,weather_var,rho_centrum,rho_rand,rho_diff_centrum_minus_rand,z_stat,p_value,q_value
+0,shortterm,temp_c,0.152009,0.112873,0.039136,9.262391,0.0,0.0
+1,shortterm,precip_mm,-0.013279,-0.00251,-0.010769,-2.503826,0.012286,0.013651
+2,shortterm,wind_speed_ms,0.094611,0.106996,-0.012386,-2.909118,0.003625,0.004531
+3,shortterm,sun_duration_min,0.168172,0.14837,0.019801,4.722025,2e-06,3e-06
+4,shortterm,humidity_pct,-0.205485,-0.15724,-0.048245,-11.600403,0.0,0.0
+5,longterm,temp_c,0.118792,0.015334,0.103459,11.174327,0.0,0.0
+6,longterm,precip_mm,0.001424,0.011611,-0.010187,-1.09436,0.273797,0.273797
+7,longterm,wind_speed_ms,0.120729,0.03821,0.082519,8.926114,0.0,0.0
+8,longterm,sun_duration_min,0.154187,0.03688,0.117306,12.73285,0.0,0.0
+9,longterm,humidity_pct,-0.170285,-0.036794,-0.133491,-14.518318,0.0,0.0

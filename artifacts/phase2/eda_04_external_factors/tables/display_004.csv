@@ -1,0 +1,7 @@
+,dataset_label,flag_col,flag_pct
+0,shortterm,precip_imputed,0.006
+1,shortterm,humidity_suspect,16.3574
+2,shortterm,sun_duration_inconsistent,2.5236
+3,longterm,precip_imputed,0.0
+4,longterm,humidity_suspect,5.3106
+5,longterm,sun_duration_inconsistent,3.7369

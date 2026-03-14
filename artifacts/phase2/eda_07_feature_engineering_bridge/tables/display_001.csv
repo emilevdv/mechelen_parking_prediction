@@ -1,0 +1,18 @@
+,source_notebook,section,n_points,first_point
+0,eda_00_protocol_and_data_audit.ipynb,## Data audit conclusions,1,"De data zijn bruikbaar als EDA-basis, met sterk vergelijkbare schema's tussen shortterm en longterm. Er zijn geen evidente fysisch onmogelijke occupancy-waarden, maar wel duidelijke operationele kwaliteitsrisico's (vooral `flag_frozen_sensor`, en in shortterm ook `low_data_coverage`/`system_blackout`/`partial_year`). Coverage is bovendien heterogeen per parking, met uitgesproken fragmentatie voor bepaalde reeksen."
+1,eda_00_protocol_and_data_audit.ipynb,## Implications for downstream EDA and feature engineering,4,Bouw elke volgende notebook met dual reporting: `full_descriptive` + `strict_inference`.
+2,eda_00_protocol_and_data_audit.ipynb,## Risks for interpretation,4,"Tijdsfragmentatie kan trend- en seizoensinterpretaties vertekenen, zelfs wanneer alle uren (0-23) voorkomen."
+3,eda_01_global_descriptives.ipynb,## Implications for feature engineering,5,"Gebruik `occupancy_rate` als hoofdtarget, maar rapporteer altijd aanvullende piekfeatures (bijv. `% uren >= 0.9`, `q95`, `q99`)."
+4,eda_01_global_descriptives.ipynb,## Key findings,4,`occupancy_rate` is descriptief de meest consistente vergelijkingsmaat tussen datasets en parkings.
+5,eda_02_temporal_patterns.ipynb,## Implications for feature engineering,4,Prioriteer cyclische tijdsfeatures en seizoenslags als basisset.
+6,eda_02_temporal_patterns.ipynb,## Key findings,4,"De data tonen duidelijke daily en weekly temporal structuur, met sterke signalen rond 24u en 168u."
+7,eda_03_spatial_patterns.ipynb,## Implications for feature engineering,4,"Combineer coarse spatial features (`tier`, `location_category`) met parking-level statistische profielen."
+8,eda_03_spatial_patterns.ipynb,## Key findings,4,"Centrum versus outer geeft een duidelijk niveauverschil in bezetting, maar binnen-tier heterogeniteit blijft groot."
+9,eda_04_external_factors.ipynb,## Implications for feature engineering,4,Gebruik niet-lineaire transformaties (bins/splines) voor weerfeatures in plaats van enkel lineaire termen.
+10,eda_04_external_factors.ipynb,## Key findings,4,Externe drivers zijn relevant maar sterk contextafhankelijk; één globale lineaire effectstructuur is onvoldoende.
+11,eda_05_shortterm_vs_longterm.ipynb,## Hypothese-overzicht,6,**H-LT1**: supported. `shortterm` en `longterm` tonen structureel verschillende bezettingsregimes.
+12,eda_05_shortterm_vs_longterm.ipynb,## Implications for feature engineering,4,Bouw de primaire feature pipeline voor shortterm en gebruik LT enkel secundair.
+13,eda_05_shortterm_vs_longterm.ipynb,## Key findings,4,"ST en LT vormen verschillende gedragsregimes, ook onder faire vergelijkingsrestricties."
+14,eda_06_interactions_and_hypothesis_synthesis.ipynb,## EDA decisions that must carry forward into Phase 3,10,Gebruik `shortterm` als primaire modeltrack; behandel `longterm` als secundaire robustness/transfer-track.
+15,eda_06_interactions_and_hypothesis_synthesis.ipynb,## Implications for feature engineering,5,Bouw een interaction-first feature set met gecontroleerde complexiteit (regularisatie + stabiliteitschecks).
+16,eda_06_interactions_and_hypothesis_synthesis.ipynb,## Key findings,4,"Interacties zijn centraal, niet marginaal: tier, tijd en externe drivers moduleren occupancy gelijktijdig."

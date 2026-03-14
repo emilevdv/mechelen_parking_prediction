@@ -1,0 +1,8 @@
+,hypothesis,status,evidence_summary
+0,H-T1,supported,Intradagprofielen verschillen naar weekday/weekend en centrum-vs-rand in beide datasets.
+1,H-T2,supported,ACF en periodogram tonen duidelijke periodiciteit rond 24u en 168u.
+2,H-T3,partially supported,Ruwe reeks geeft gemengde ADF/KPSS-signalen; na 24u/168u differencing wordt stationariteit consistenter.
+3,H-T4,partially supported,2020 wijkt af in niveau/distributie; seizoenssignatuur blijft aanwezig maar profielgelijkenis varieert per referentiejaar.
+4,H-T5,supported,"R2(hour, hour×weekday) en spectrale pieken bevestigen bruikbare dagelijkse/wekelijkse cycli."
+5,H-T6,supported,Shortterm en longterm tonen verschillende weekend-effecten en seasonality-sterkte.
+6,H-T7,supported,Jaarverschillen en compositieshift impliceren year-aware train/holdoutstrategie.

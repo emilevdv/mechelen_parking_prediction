@@ -1,8 +1,0 @@
-tier,threshold_ms,n_above,n_below,med_above,med_below,delta_med,mw_p,r_rb,significant
-centrum,5,11015,62078,0.366,0.3407,0.0252,1e-06,0.0291,True
-centrum,8,844,72249,0.363,0.3434,0.0195,0.826728,-0.0188,False
-centrum,10,120,72973,0.397,0.3434,0.0535,0.035477,0.0953,True
-centrum,12,14,73079,0.4141,0.3434,0.0707,0.10451,0.1939,False
-vesten_of_rand,5,7564,49180,0.3173,0.2333,0.084,0.0,0.1538,True
-vesten_of_rand,8,547,56197,0.2933,0.2457,0.0476,6e-05,0.0954,True
-vesten_of_rand,10,77,56667,0.2632,0.2471,0.0161,0.165545,0.064,False

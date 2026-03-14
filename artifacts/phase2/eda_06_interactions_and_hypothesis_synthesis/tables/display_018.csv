@@ -1,0 +1,9 @@
+,family,n_tests,n_q_global_lt_005,n_q_family_lt_005,n_practically_relevant,n_robust
+0,hour_x_event,48,34,34,33,33
+1,stlt_weather_diff_fair,5,5,5,3,3
+2,stlt_x_binary_fair,5,3,3,3,3
+3,stlt_x_weather_fair,10,9,9,5,5
+4,tier_weather_diff,10,9,9,4,4
+5,tier_x_binary,20,18,18,13,13
+6,tier_x_weather,20,17,17,11,11
+7,weekend_x_event,4,2,2,2,2

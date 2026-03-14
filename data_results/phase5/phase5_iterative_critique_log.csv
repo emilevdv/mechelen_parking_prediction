@@ -1,0 +1,5 @@
+rule,value,threshold,triggered,action,detail
+top10_jaccard_threshold,0.5018315018315018,0.6,True,rerun_shap_with_larger_samples,"policy=0.5018, forecast=0.7172"
+p4_direction_consistency,0.7666666666666666,0.65,False,keep_directional_claims,mean sign consistency over top-20 P4 features
+tier_delta_ci_crosses_zero,0.5,0.0,True,suppress_hard_tier_claims_for_non_significant_features,share of features where 95% CI includes 0
+benchmark_better_than_primary_holdout_mae,1.0,0.0,True,force_tradeoff_paragraph,"policy=True, forecast=True"

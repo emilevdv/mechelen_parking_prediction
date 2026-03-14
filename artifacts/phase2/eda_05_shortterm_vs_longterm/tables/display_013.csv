@@ -1,0 +1,7 @@
+,scope,dataset,mean_abs_month_centered_rho,n_weather_vars,mean_abs_month_adjusted_binary_delta,n_binary_drivers
+0,full_context,longterm,0.074364,5,0.043116,3
+1,full_context,shortterm,0.115535,5,0.019061,3
+2,year2024,longterm,0.074364,5,0.043116,3
+3,year2024,shortterm,0.146485,5,0.022495,3
+4,year2024_common_parkings,longterm,0.074364,5,0.043116,3
+5,year2024_common_parkings,shortterm,0.141983,5,0.016648,3

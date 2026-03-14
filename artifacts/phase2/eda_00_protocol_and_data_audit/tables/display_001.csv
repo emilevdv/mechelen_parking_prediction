@@ -1,0 +1,3 @@
+,dataset,n_rows,n_cols,date_min,date_max,n_unique_parkings
+shortterm,shortterm,284524,66,2018-12-31 23:00:00,2026-02-02 00:00:00,10
+longterm,longterm,46643,65,2024-01-01 00:00:00,2024-12-31 22:00:00,7

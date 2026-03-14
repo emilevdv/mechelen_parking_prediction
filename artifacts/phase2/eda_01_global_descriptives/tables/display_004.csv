@@ -1,0 +1,9 @@
+variable,dataset_label,q1,q3,iqr,lower_fence,upper_fence,iqr_outlier_pct
+number_of_occupied_spaces,longterm,13.0,36.0,23.0,-21.5,70.5,0.0
+number_of_spaces_override,longterm,50.0,69.0,19.0,21.5,97.5,36.9209
+occupancy_rate,longterm,0.23,0.6562,0.4262,-0.4094,1.2956,0.0
+total_capacity,longterm,124.0,189.0,65.0,26.5,286.5,18.7595
+number_of_occupied_spaces,shortterm,18.0,84.0,66.0,-81.0,183.0,4.7834
+number_of_spaces_override,shortterm,85.0,227.0,142.0,-128.0,440.0,0.0
+occupancy_rate,shortterm,0.1659,0.5745,0.4086,-0.447,1.1874,0.0
+total_capacity,shortterm,124.0,255.0,131.0,-72.5,451.5,9.2572

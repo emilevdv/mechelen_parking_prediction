@@ -174,17 +174,13 @@ def merge_events_into_mad(
     out[date_col] = pd.to_datetime(out[date_col]).dt.normalize()
     out = out.merge(events, on=date_col, how="left", validate="many_to_one")
 
-    event_flags = [
-        "is_event_day",
-        "is_football_day",
-        "is_festival_day",
-        "is_procession_day",
-        "is_kermis_day",
-        "is_carnival_day",
-        "event_scale_max",
-        "n_concurrent_events",
-    ]
-    for col in event_flags:
+    # Fill all day-level event flags present in events_master, including future additions
+    # such as is_sport_day / is_markt_day, to keep MAD merge forward-compatible.
+    dynamic_day_flags = [c for c in out.columns if c.startswith("is_") and c.endswith("_day")]
+    for col in dynamic_day_flags:
+        out[col] = out[col].fillna(0).astype("int8")
+
+    for col in ["event_scale_max", "n_concurrent_events"]:
         if col in out.columns:
             out[col] = out[col].fillna(0).astype("int8")
     if "data_confidence" in out.columns:
@@ -198,4 +194,3 @@ def export_events_master(events_master: pd.DataFrame, project_root: Path | None 
     out_path = resolve_data_path("@data/intermediate/events_master.parquet", project_root)
     events_master.to_parquet(out_path, index=False)
     return out_path
-

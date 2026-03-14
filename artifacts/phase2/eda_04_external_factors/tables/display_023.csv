@@ -1,0 +1,12 @@
+,hypothesis,status,evidence_summary
+0,H-E1,partially supported,Neerslag toont zwakke maar niet-lineaire patronen; extreme neerslag wijkt af.
+1,H-E2,supported,Temperatuureffect is duidelijk seizoens- en datasetafhankelijk.
+2,H-E3,partially supported,"Kickoff-vensters tonen pre/post-dynamiek, maar event-dagpatronen zijn niet uniform over contexten."
+3,H-E4,supported,Holiday-effecten verschillen systematisch tussen tiers.
+4,H-E5,supported,"Temp en maand delen substantiële seizoensstructuur (hoge R² temp~month), met matige multicollineariteit."
+5,H-E6,supported,Hoge wind/ gusts zijn geassocieerd met hogere occupancy in beide datasets.
+6,H-E7,not supported,Geen consistent negatief zomers zonneschijneffect; associaties zijn eerder positief.
+7,H-E8,supported,Schoolvakantie-effect varieert per tier en dataset.
+8,H-E9,partially supported,"Eventomvang hangt samen met occupancy, maar richting/sterkte is niet stabiel over datasets en tiers."
+9,H-E10,supported,Meerdere externe relaties verschillen substantieel tussen shortterm en longterm.
+10,H-E11,supported,Month-adjusted analyses en data_confidence-patronen tonen relevante confoundingrisico's.

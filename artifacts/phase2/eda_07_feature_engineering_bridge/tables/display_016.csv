@@ -1,0 +1,3 @@
+,split,doel,regels,volgende stap
+0,train,feature fit + model fit,alle transformaties train-only; modelkeuze via rolling CV in train,feature pipeline bouwen en tune via cv_plan_df
+1,holdout,"finale, ongeziene thesis-evaluatie op 2025",geen tuning op holdoutresultaten,finale rapportering in Phase 4

@@ -1,0 +1,7 @@
+,dataset,subset,n_obs,pct_of_dataset
+3,longterm,full_descriptive,46643,100.0
+4,longterm,quality_filtered,46643,100.0
+5,longterm,strict_inference,42531,91.18410050811482
+0,shortterm,full_descriptive,284524,100.0
+1,shortterm,quality_filtered,250437,88.01963981948798
+2,shortterm,strict_inference,227688,80.02418073695013

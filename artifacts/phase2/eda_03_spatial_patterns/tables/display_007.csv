@@ -1,0 +1,3 @@
+dataset_label,mean_diff_center_minus_outer,median_diff_center_minus_outer,q95_diff_center_minus_outer,std_diff_center_minus_outer
+longterm,0.0956,0.1633,-0.0262,-0.0243
+shortterm,0.1406,0.1343,0.1704,0.0458

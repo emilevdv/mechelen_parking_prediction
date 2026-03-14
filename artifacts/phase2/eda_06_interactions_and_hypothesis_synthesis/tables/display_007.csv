@@ -1,0 +1,11 @@
+,dataset_label,flag_col,dod_delta_centrum_minus_rand,dod_month_adjusted_centrum_minus_rand
+0,longterm,is_any_holiday,-0.023406,0.004914
+1,shortterm,is_any_holiday,-0.00463,-0.009322
+2,longterm,is_event_day,-0.022686,-0.020534
+3,shortterm,is_event_day,-0.029241,-0.056598
+4,longterm,is_national_holiday,-0.053793,-0.029519
+5,shortterm,is_national_holiday,-0.003243,-0.012408
+6,longterm,is_other_holiday,-0.002736,0.020231
+7,shortterm,is_other_holiday,-0.004314,-0.011157
+8,longterm,is_school_vacation,-0.038879,0.015324
+9,shortterm,is_school_vacation,0.007844,-0.015597

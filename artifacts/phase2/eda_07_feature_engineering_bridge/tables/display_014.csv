@@ -1,0 +1,2 @@
+,year,n_rows,n_parkings,date_min,date_max,why_excluded
+0,2019,33000,6,2019-01-01,2019-12-31 23:00:00,weather-features 100% missing -> niet compatibel met external FE

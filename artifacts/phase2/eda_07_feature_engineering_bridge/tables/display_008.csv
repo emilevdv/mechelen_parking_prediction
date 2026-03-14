@@ -1,0 +1,6 @@
+,flag_col,pct_in_raw_shortterm,pct_in_filtered_shortterm
+0,system_blackout,0.9012,0.0
+1,low_data_coverage,9.2776,0.0
+2,partial_year,2.7028,0.0
+3,flag_occ_inconsistent,0.0,0.0
+4,flag_frozen_sensor,8.5729,9.0837

@@ -1,3 +1,0 @@
-tier,n_weekday_peaks,weekday_peak_hours,n_weekend_peaks,weekend_unimodal,H_T1_weekday_bimodal,H_T1_confirmed
-centrum,3,"[(9, np.float64(0.4638)), (12, np.float64(0.453)), (18, np.float64(0.4301))]",2,False,True,False
-vesten_of_rand,2,"[(13, np.float64(0.4003)), (19, np.float64(0.332))]",1,True,True,True

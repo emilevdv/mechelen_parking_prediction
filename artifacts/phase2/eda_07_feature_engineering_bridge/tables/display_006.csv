@@ -1,0 +1,10 @@
+,feature/feature family,waarom niet aanbevolen,risico,alternatief
+0,number_of_occupied_spaces (contemporaan),Is inhoudelijk dezelfde targetinformatie op hetzelfde tijdstip.,direct target leakage,gebruik alleen historische lags in forecast track
+1,occupancy_rate (contemporaan),Niet beschikbaar op predictietijdstip voor dezelfde timestamp.,direct leakage,past-only lags (forecast) of geen occupancy history (policy)
+2,parking_id_hash,Geen extra informatie t.o.v. parking_id; moeilijker interpreteerbaar.,onnodige complexiteit,parking_id entity encoding
+3,parking_type,Nagenoeg constante waarde (te weinig variatie).,geen informatieve waarde,tier + parking-specifieke encodings
+4,event_names_combined / holiday_name tekstvelden,"Hoge cardinaliteit en sparsity, beperkte robuustheid.",overfitting + instabiele generalisatie,gestandaardiseerde typeflags en schaalfeatures
+5,system_blackout / low_data_coverage / partial_year als predictor,"Primair kwaliteitscontrole, niet stabiel operationeel gedragssignaal.",artefact-learning,gebruik als filter/guardrail en rapportering
+6,qc_* als directe predictive features,Representeren meetkwaliteit i.p.v. vraagdynamiek.,model leert sensorkwaliteit,gebruik voor imputatie/validatie en sensitiviteitsanalyse
+7,centered rolling windows,Gebruiken toekomstige observaties.,tijdslekkage,strikt causale left-aligned rolling windows
+8,LT als primaire trainingdataset,Slechts 1 jaar en beperkte representativiteit.,zwakke externe validiteit,ST als hoofdtrack; LT als robustness-track

@@ -1,0 +1,9 @@
+variable,longterm,shortterm
+humidity_pct,0.0,13.177
+precip_mm,0.0,13.177
+shortwave_wm2,0.0,13.177
+sun_duration_min,0.0,13.177
+sun_intensity_wm2,0.0,13.177
+temp_c,0.0,13.177
+wind_gusts_ms,0.0,13.177
+wind_speed_ms,0.0,13.177

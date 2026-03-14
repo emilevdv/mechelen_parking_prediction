@@ -1,0 +1,10 @@
+,beslisdomein,beslissing,scope,concrete keuze,motivatie
+0,cyclische encodings,"ja, verplicht",forecast + policy,"hour(24), weekday(7), month(12) sin/cos",Sterke dagelijkse/wekelijkse/seizoenspatronen in EDA 02
+1,lags,"ja voor forecast, nee voor policy",track-specifiek,"lag 1h/24h/168h per parking, strict past-only",Hoge autocorrelatie en forecastwinst verwacht; policy vraagt minder inertie-afhankelijkheid
+2,rolling features,"ja voor forecast, nee voor policy",track-specifiek,"rolling mean/std (3h,6h,24h) causaal",Regime- en volatiliteitsinformatie uit EDA 01/02
+3,event cascade features,ja,forecast + policy,"event_day, eventtype, n_concurrent_events, kickoff proximity",Eventeffecten heterogeen naar type en timing (EDA 04/06)
+4,weather bins/splines/thresholds,ja,forecast + policy,"temp/wind splines, precip bins, high-wind threshold",Niet-lineaire en seizoensafhankelijke weatherpatronen (EDA 04/06)
+5,holiday/vacation codering,ja,forecast + policy,is_any_holiday + typeflags + is_school_vacation,Effecten bestaan maar segmentafhankelijk; interacties nodig
+6,tier/parking encodings,ja,forecast + policy,tier indicator + parking entity encoding,Sterke spatial/parking heterogeniteit (EDA 03)
+7,capacity-normalisaties,ja,forecast + policy,saturatie- en capaciteitscontextfeatures,Piekbelasting en capaciteit spelen rol in interpretatie en beleid
+8,interaction terms,"ja, prioriteit",forecast + policy,"event x tier, holiday x tier, weather x season, event x hour",EDA 06 toont dat main effects alleen onvoldoende zijn

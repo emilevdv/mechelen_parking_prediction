@@ -1,0 +1,5 @@
+,scope,description,dataset,n_rows,n_parkings,years,date_min,date_max
+0,full_context,ST quality-filtered alle jaren vs LT quality-filtered 2024,shortterm,250437,10,"2019, 2020, 2023, 2024, 2025",2019-01-01,2025-12-31 23:00:00
+1,full_context,ST quality-filtered alle jaren vs LT quality-filtered 2024,longterm,46643,7,2024,2024-01-01,2024-12-31 22:00:00
+2,fair_2024_common_parkings,ST 2024 + LT 2024 op overlappende parkings,shortterm,47809,7,2024,2024-01-01,2024-12-31 23:00:00
+3,fair_2024_common_parkings,ST 2024 + LT 2024 op overlappende parkings,longterm,46643,7,2024,2024-01-01,2024-12-31 22:00:00

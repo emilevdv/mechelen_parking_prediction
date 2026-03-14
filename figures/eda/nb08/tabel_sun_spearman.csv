@@ -1,9 +1,0 @@
-tier,season,n_obs,spearman_rho,p_value,rho_partial_temp,H_E7_consistent,partial_negative_zomer
-centrum,winter,20676,0.0077,0.671597,0.0082,False,False
-centrum,lente,18236,-0.0308,0.092133,-0.0063,False,False
-centrum,zomer,12567,0.1498,0.0,0.066,False,False
-centrum,herfst,21614,0.1398,0.0,0.1228,False,False
-vesten_of_rand,winter,13486,0.187,0.0,0.1833,False,False
-vesten_of_rand,lente,12226,0.1117,0.0,0.1247,False,False
-vesten_of_rand,zomer,13094,0.1915,0.0,0.1205,False,False
-vesten_of_rand,herfst,17938,0.1774,0.0,0.1647,False,False

@@ -1,0 +1,10 @@
+,metric,value
+0,n_rows,46643.0
+1,n_parkings,7.0
+2,n_years,1.0
+3,year_min,2024.0
+4,year_max,2024.0
+5,min_obs_per_parking,302.0
+6,max_obs_per_parking,8750.0
+7,obs_P_Tinel,302.0
+8,pct_P_Tinel_of_LT,0.6474712175460412

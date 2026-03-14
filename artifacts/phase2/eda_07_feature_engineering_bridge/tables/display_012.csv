@@ -1,0 +1,5 @@
+,operational_split,tier_temporal,n_rows
+0,holdout,centrum,43800
+1,holdout,vesten_of_rand,43800
+2,train,centrum,73093
+3,train,vesten_of_rand,56744

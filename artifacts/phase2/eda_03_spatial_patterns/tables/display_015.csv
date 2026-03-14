@@ -1,0 +1,67 @@
+,dataset_label,pair,dist_km,corr_ts,same_tier
+46,longterm,P Grote Markt__P Kathedraal,0.1728,0.4471,True
+53,longterm,P Hoogstraat__P Komet,0.3144,0.4052,False
+54,longterm,P Hoogstraat__P Maarten,0.3954,0.2648,False
+59,longterm,P Kathedraal__P Tinel,0.5319,0.1011,False
+50,longterm,P Grote Markt__P Tinel,0.6169,0.6455,False
+45,longterm,P Grote Markt__P Hoogstraat,0.62,0.1246,True
+63,longterm,P Komet__P Maarten,0.6498,0.5008,True
+51,longterm,P Hoogstraat__P Kathedraal,0.7091,0.3044,True
+48,longterm,P Grote Markt__P Komet,0.7585,-0.0254,False
+57,longterm,P Kathedraal__P Komet,0.7799,0.3099,False
+56,longterm,P Kathedraal__P Keerdok,0.7985,0.4429,False
+62,longterm,P Keerdok__P Tinel,0.8607,0.6079,True
+49,longterm,P Grote Markt__P Maarten,0.9032,-0.0371,False
+47,longterm,P Grote Markt__P Keerdok,0.9693,0.5136,False
+58,longterm,P Kathedraal__P Maarten,1.0339,0.1892,False
+60,longterm,P Keerdok__P Komet,1.1548,0.1908,True
+55,longterm,P Hoogstraat__P Tinel,1.2297,0.1333,False
+52,longterm,P Hoogstraat__P Keerdok,1.2917,0.3356,False
+64,longterm,P Komet__P Tinel,1.3086,0.3415,True
+65,longterm,P Maarten__P Tinel,1.5156,0.5114,True
+61,longterm,P Keerdok__P Maarten,1.6826,-0.0336,True
+10,shortterm,P Grote Markt__P Kathedraal,0.1728,0.8125,True
+20,shortterm,P Hoogstraat__P Lamot,0.2595,0.3361,True
+19,shortterm,P Hoogstraat__P Komet,0.3144,0.3472,False
+16,shortterm,P Grote Markt__P Veemarkt,0.3382,0.8022,True
+13,shortterm,P Grote Markt__P Lamot,0.3609,0.452,True
+21,shortterm,P Hoogstraat__P Maarten,0.3954,0.2451,False
+29,shortterm,P Kathedraal__P Veemarkt,0.3957,0.7186,True
+44,shortterm,P Tinel__P Veemarkt,0.4344,0.6012,False
+35,shortterm,P Komet__P Lamot,0.4599,0.1869,False
+26,shortterm,P Kathedraal__P Lamot,0.4638,0.3629,True
+6,shortterm,P Bruul__P Maarten,0.5299,-0.1175,True
+28,shortterm,P Kathedraal__P Tinel,0.5319,0.6639,False
+39,shortterm,P Lamot__P Maarten,0.5757,0.1141,False
+15,shortterm,P Grote Markt__P Tinel,0.6169,0.6175,False
+9,shortterm,P Grote Markt__P Hoogstraat,0.62,0.5356,True
+36,shortterm,P Komet__P Maarten,0.6498,0.1026,True
+41,shortterm,P Lamot__P Veemarkt,0.6716,0.4643,True
+17,shortterm,P Hoogstraat__P Kathedraal,0.7091,0.532,True
+5,shortterm,P Bruul__P Lamot,0.7147,0.4459,False
+1,shortterm,P Bruul__P Hoogstraat,0.7289,0.064,False
+12,shortterm,P Grote Markt__P Komet,0.7585,0.2262,False
+25,shortterm,P Kathedraal__P Komet,0.7799,0.2413,False
+24,shortterm,P Kathedraal__P Keerdok,0.7985,0.2405,False
+33,shortterm,P Keerdok__P Tinel,0.8607,0.2598,True
+0,shortterm,P Bruul__P Grote Markt,0.8623,0.2987,False
+14,shortterm,P Grote Markt__P Maarten,0.9032,0.0247,False
+23,shortterm,P Hoogstraat__P Veemarkt,0.9274,0.4687,True
+8,shortterm,P Bruul__P Veemarkt,0.945,0.2473,False
+11,shortterm,P Grote Markt__P Keerdok,0.9693,0.2219,False
+40,shortterm,P Lamot__P Tinel,0.9739,0.3483,False
+2,shortterm,P Bruul__P Kathedraal,1.0331,0.1479,False
+27,shortterm,P Kathedraal__P Maarten,1.0339,0.0195,False
+4,shortterm,P Bruul__P Komet,1.0431,0.0972,True
+38,shortterm,P Komet__P Veemarkt,1.0951,0.2142,False
+34,shortterm,P Keerdok__P Veemarkt,1.1003,0.18,False
+31,shortterm,P Keerdok__P Lamot,1.1362,0.0798,False
+43,shortterm,P Maarten__P Veemarkt,1.1439,0.0149,False
+30,shortterm,P Keerdok__P Komet,1.1548,0.0985,True
+22,shortterm,P Hoogstraat__P Tinel,1.2297,0.4483,False
+18,shortterm,P Hoogstraat__P Keerdok,1.2917,0.4793,False
+37,shortterm,P Komet__P Tinel,1.3086,0.2648,True
+7,shortterm,P Bruul__P Tinel,1.3757,0.2619,True
+42,shortterm,P Maarten__P Tinel,1.5156,-0.0061,True
+32,shortterm,P Keerdok__P Maarten,1.6826,0.3167,True
+3,shortterm,P Bruul__P Keerdok,1.811,0.0408,True

@@ -1,0 +1,13 @@
+,scope,profile,n_points,corr,mae
+0,full_context,intradag,24,0.88544,0.06418
+1,full_context,weekprofiel,7,-0.24948,0.06333
+2,full_context,seizoensprofiel,4,0.32688,0.05942
+3,full_context,hour_x_weekday,168,0.65331,0.08326
+4,year2024,intradag,24,0.82315,0.12097
+5,year2024,weekprofiel,7,-0.3534,0.12678
+6,year2024,seizoensprofiel,4,0.48889,0.14199
+7,year2024,hour_x_weekday,168,0.58603,0.14267
+8,year2024_common_parkings,intradag,24,0.81262,0.12449
+9,year2024_common_parkings,weekprofiel,7,-0.43387,0.13225
+10,year2024_common_parkings,seizoensprofiel,4,0.41623,0.14259
+11,year2024_common_parkings,hour_x_weekday,168,0.57431,0.14258

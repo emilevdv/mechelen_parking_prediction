@@ -1,0 +1,5 @@
+track,role,run_id,model_family,feature_set_id,row_filter,claim_scope
+policy,primary,P4_ridge_a1_0,ridge,policy_tse_exante_strict,none,fold_plus_holdout
+forecast,primary,F3_rf_90_d12_l2,random_forest,forecast_tsel_core_strict_lagvalid,l_valid_all_core==1,fold_plus_holdout
+policy,benchmark,P0_profile_baseline,baseline,baseline_profile,none,benchmark_contrast
+forecast,benchmark,F0_persistence_baseline,baseline,baseline_persistence,none,benchmark_contrast

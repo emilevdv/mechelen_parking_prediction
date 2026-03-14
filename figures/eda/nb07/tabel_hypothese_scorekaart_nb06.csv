@@ -1,5 +1,0 @@
-hypothese,status,kw_p,eta2,eta2_label,cent_mean,vest_mean,cent_p90,vest_p90,spearman_rho,spearman_p,mean_intra_r,mean_inter_r,fischer_p,r_rb_centrum,r_rb_vesten,delta_r_rb,p_fischer,n_event_types_confirmed
-H-S1,⚠  GEDEELTELIJK / ONZEKER,0.0,0.03958202751885322,klein,0.40503999999999996,0.24402,0.7745599999999999,0.4911,,,,,,,,,,
-H-S2,⚠  GEDEELTELIJK / ONZEKER,,,,,,,,-0.10942299786241164,0.7634826463741491,,,,,,,,
-H-S3,⚠  GEDEELTELIJK / ONZEKER,,,,,,,,,,0.41263313108515104,0.3232107886500914,0.22650390836681603,,,,,
-H-S4,❌ VERWORPEN,,,,,,,,,,,,,0.0564,0.0632,-0.0068,0.6318,1.0

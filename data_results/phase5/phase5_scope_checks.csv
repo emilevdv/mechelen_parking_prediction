@@ -1,0 +1,12 @@
+check,result,detail
+shap_available,PASS,version=0.51.0
+exists::phase4_model_selection_shortlist.csv,PASS,/Users/emilevandevoorde/Documents/mp_mechelen_parking_v2/data_results/phase4/phase4_model_selection_shortlist.csv
+exists::phase4_holdout_results_2025.csv,PASS,/Users/emilevandevoorde/Documents/mp_mechelen_parking_v2/data_results/phase4/phase4_holdout_results_2025.csv
+exists::phase4_fold_safety_log.csv,PASS,/Users/emilevandevoorde/Documents/mp_mechelen_parking_v2/data_results/phase4/phase4_fold_safety_log.csv
+exists::event_feature_availability_contract.csv,PASS,/Users/emilevandevoorde/Documents/mp_mechelen_parking_v2/data_results/phase4/event_feature_availability_contract.csv
+exists::feature_manifest_policy.json,PASS,/Users/emilevandevoorde/Documents/mp_mechelen_parking_v2/data_processed/phase4_feature_sets/feature_manifest_policy.json
+exists::feature_manifest_forecast.json,PASS,/Users/emilevandevoorde/Documents/mp_mechelen_parking_v2/data_processed/phase4_feature_sets/feature_manifest_forecast.json
+shortlist_has::P4_ridge_a1_0,PASS,present in phase4_model_selection_shortlist
+shortlist_has::F3_rf_90_d12_l2,PASS,present in phase4_model_selection_shortlist
+shortlist_has::P0_profile_baseline,PASS,present in phase4_model_selection_shortlist
+shortlist_has::F0_persistence_baseline,PASS,present in phase4_model_selection_shortlist

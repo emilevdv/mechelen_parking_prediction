@@ -1,8 +1,0 @@
-parking_id,st_rate,lt_rate,comb_rate,tier,lt_ratio
-P Grote Markt,0.3794,0.044,0.4234,centrum,0.1039
-P Hoogstraat,0.1818,0.328,0.5098,centrum,0.6434
-P Kathedraal,0.2384,0.1718,0.4103,centrum,0.4189
-P Keerdok,0.2303,0.0551,0.2854,vesten_of_rand,0.193
-P Komet,0.0981,0.3601,0.4581,vesten_of_rand,0.7859
-P Maarten,0.0482,0.0697,0.1179,vesten_of_rand,0.5909
-P Tinel,0.1402,0.1743,0.3146,vesten_of_rand,0.5542

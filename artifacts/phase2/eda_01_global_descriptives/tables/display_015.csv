@@ -1,0 +1,3 @@
+dataset_label,missing_pct_occupancy_rate,pct_outside_0_1,mean_abs_reconstruction_error,max_abs_reconstruction_error,parkings_with_variable_capacity_override,max_nunique_capacity_override_per_parking
+longterm,0.0,0.0,0.0,0.0,0,1
+shortterm,0.0,0.0,0.0,0.0,8,5

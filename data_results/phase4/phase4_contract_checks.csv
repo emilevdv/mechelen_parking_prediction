@@ -1,0 +1,5 @@
+check,result,detail
+policy_has_no_l_columns,PASS,n_l_columns=0
+forecast_has_exact_5_selected_l_columns,PASS,n_l_columns=5
+forecast_excludes_l_validity_flags_from_model_inputs,PASS,n_l_valid_in_inputs=0
+immutable_manifest_checksums,PASS,n_checked=11

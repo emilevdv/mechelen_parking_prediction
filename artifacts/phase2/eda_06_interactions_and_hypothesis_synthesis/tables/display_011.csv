@@ -1,0 +1,11 @@
+,n,rho,p_value,dataset_label,weather_var,q_value
+0,47809,0.160602,0.0,shortterm,temp_c,0.0
+1,47809,-0.018116,7.5e-05,shortterm,precip_mm,8.3e-05
+2,47809,0.130025,0.0,shortterm,wind_speed_ms,0.0
+3,47809,0.15798,0.0,shortterm,sun_duration_min,0.0
+4,47809,-0.24319,0.0,shortterm,humidity_pct,0.0
+5,46643,0.074701,0.0,longterm,temp_c,0.0
+6,46643,-1.9e-05,0.996744,longterm,precip_mm,0.996744
+7,46643,0.087401,0.0,longterm,wind_speed_ms,0.0
+8,46643,0.09548,0.0,longterm,sun_duration_min,0.0
+9,46643,-0.11422,0.0,longterm,humidity_pct,0.0

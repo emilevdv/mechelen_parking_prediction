@@ -1,0 +1,9 @@
+,shortterm,longterm,all_datasets
+flag_overcapacity,True,False,False
+total_capacity,True,True,True
+qc_temp,True,True,True
+qc_precip,True,True,True
+qc_wind_speed,True,True,True
+qc_wind_gusts,True,True,True
+qc_humidity,True,True,True
+qc_pressure,True,True,True

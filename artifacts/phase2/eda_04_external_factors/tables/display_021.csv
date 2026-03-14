@@ -1,0 +1,17 @@
+,flag_col,n_true,n_false,mean_true,mean_false,delta_true_minus_false,dataset_label,tier_temporal,month_adjusted_delta
+0,is_event_day,32350,103579,0.44655,0.44639,0.00016,shortterm,centrum,-0.01632
+1,is_event_day,29451,85057,0.32766,0.29826,0.0294,shortterm,vesten_of_rand,0.04027
+2,is_football_day,4616,131313,0.42961,0.44702,-0.01741,shortterm,centrum,-0.03374
+3,is_football_day,4080,110428,0.34334,0.30444,0.0389,shortterm,vesten_of_rand,0.04629
+4,is_sport_day,6134,129795,0.41999,0.44768,-0.02769,shortterm,centrum,-0.04986
+5,is_sport_day,5478,109030,0.31693,0.30527,0.01166,shortterm,vesten_of_rand,0.01037
+6,is_festival_day,3514,132415,0.49663,0.4451,0.05153,shortterm,centrum,0.02682
+7,is_festival_day,3872,110636,0.30808,0.30575,0.00233,shortterm,vesten_of_rand,0.00278
+8,is_event_day,7924,17757,0.4384,0.4988,-0.0604,longterm,centrum,-0.03546
+9,is_event_day,6858,14104,0.35921,0.39692,-0.03771,longterm,vesten_of_rand,-0.01493
+10,is_football_day,1068,24613,0.45979,0.48104,-0.02126,longterm,centrum,-0.03134
+11,is_football_day,744,20218,0.32692,0.3867,-0.05978,longterm,vesten_of_rand,-0.02319
+12,is_sport_day,1705,23976,0.41761,0.48461,-0.06699,longterm,centrum,-0.05078
+13,is_sport_day,1503,19459,0.33647,0.3883,-0.05183,longterm,vesten_of_rand,-0.01406
+14,is_festival_day,1371,24310,0.4047,0.48442,-0.07972,longterm,centrum,-0.04267
+15,is_festival_day,1381,19581,0.30513,0.39019,-0.08505,longterm,vesten_of_rand,-0.05571

@@ -1,0 +1,5 @@
+,dataset_label,data_confidence,share_pct,event_day_pct_within_confidence,n_obs
+2,longterm,verified,88.5642,22.8715,41309
+3,longterm,estimated,11.4358,100.0,5334
+0,shortterm,verified,94.8446,20.583,237526
+1,shortterm,estimated,5.1554,100.0,12911

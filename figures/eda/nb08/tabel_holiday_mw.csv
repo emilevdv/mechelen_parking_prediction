@@ -1,7 +1,0 @@
-cal_var,cal_label,day_subset,tier,n_event,n_non_event,med_event,med_non_event,delta_med,mw_p,r_rb,significant
-is_national_holiday,Nationale feestdag,Alle dagen,centrum,2463,70630,0.3333,0.3434,-0.0101,0.757302,0.0037,False
-is_national_holiday,Nationale feestdag,Alle dagen,vesten_of_rand,1713,55031,0.1827,0.2476,-0.0649,0.0,-0.1439,True
-is_school_vacation,Schoolvakantie,Weekdagen,centrum,11378,39366,0.3429,0.3417,0.0012,0.29945,-0.0064,False
-is_school_vacation,Schoolvakantie,Weekdagen,vesten_of_rand,10371,29270,0.1923,0.2692,-0.0769,0.0,-0.1237,True
-is_school_vacation,Schoolvakantie,Alle dagen,centrum,17443,55650,0.3434,0.3434,0.0,0.1126,-0.0079,False
-is_school_vacation,Schoolvakantie,Alle dagen,vesten_of_rand,15545,41199,0.2,0.2692,-0.0692,0.0,-0.1142,True

@@ -1,0 +1,76 @@
+,source_notebook,section,point_id,statement
+0,eda_00_protocol_and_data_audit.ipynb,## Data audit conclusions,1,"De data zijn bruikbaar als EDA-basis, met sterk vergelijkbare schema's tussen shortterm en longterm. Er zijn geen evidente fysisch onmogelijke occupancy-waarden, maar wel duidelijke operationele kwaliteitsrisico's (vooral `flag_frozen_sensor`, en in shortterm ook `low_data_coverage`/`system_blackout`/`partial_year`). Coverage is bovendien heterogeen per parking, met uitgesproken fragmentatie voor bepaalde reeksen."
+1,eda_00_protocol_and_data_audit.ipynb,## Risks for interpretation,1,"Tijdsfragmentatie kan trend- en seizoensinterpretaties vertekenen, zelfs wanneer alle uren (0-23) voorkomen."
+2,eda_00_protocol_and_data_audit.ipynb,## Risks for interpretation,2,"Hoge missingness in naamvelden (holiday/event labels) is grotendeels structureel, maar kan foutief behandeld worden als random missingness."
+3,eda_00_protocol_and_data_audit.ipynb,## Risks for interpretation,3,Parking-specifieke coverageverschillen (bv. `P Tinel` longterm) verhogen het risico op selectiebias in cross-parking vergelijkingen.
+4,eda_00_protocol_and_data_audit.ipynb,## Risks for interpretation,4,Frozen-sensor flags impliceren mogelijk meetplateaus; analyses die op korte-termijnvariatie steunen zijn hiervoor gevoelig.
+5,eda_00_protocol_and_data_audit.ipynb,## Implications for downstream EDA and feature engineering,1,Bouw elke volgende notebook met dual reporting: `full_descriptive` + `strict_inference`.
+6,eda_00_protocol_and_data_audit.ipynb,## Implications for downstream EDA and feature engineering,2,"Voeg kwaliteitsflags expliciet toe als features en/of filtercriteria, en rapporteer hun prevalentie systematisch."
+7,eda_00_protocol_and_data_audit.ipynb,## Implications for downstream EDA and feature engineering,3,"Gebruik coverage-metadata (gaps, observatievolume per parking) als randvoorwaarde bij interpretatie en modelvalidatie."
+8,eda_00_protocol_and_data_audit.ipynb,## Implications for downstream EDA and feature engineering,4,Vermijd leakage door kwaliteitssignalen enkel te gebruiken wanneer ze ook operationeel beschikbaar zijn op voorspeltijdstip.
+9,eda_01_global_descriptives.ipynb,## Key findings,1,`occupancy_rate` is descriptief de meest consistente vergelijkingsmaat tussen datasets en parkings.
+10,eda_01_global_descriptives.ipynb,## Key findings,2,"Shortterm bevat een dynamischer bezettingsprofiel dan longterm, met relatief zwaarder piekgedrag."
+11,eda_01_global_descriptives.ipynb,## Key findings,3,Parkingniveau-heterogeniteit is groot; aggregatie op globaal niveau maskeert relevante verschillen.
+12,eda_01_global_descriptives.ipynb,## Key findings,4,Locatie en jaar dragen zichtbare descriptieve structuur die later hypothese-gedreven moet worden uitgediept.
+13,eda_01_global_descriptives.ipynb,## Implications for feature engineering,1,"Gebruik `occupancy_rate` als hoofdtarget, maar rapporteer altijd aanvullende piekfeatures (bijv. `% uren >= 0.9`, `q95`, `q99`)."
+14,eda_01_global_descriptives.ipynb,## Implications for feature engineering,2,"Voeg stabiliteitsfeatures toe (bijv. gemiddelde absolute uurverandering, regime-indicatoren voor plotse sprongen)."
+15,eda_01_global_descriptives.ipynb,## Implications for feature engineering,3,"Maak parking-specifieke baselinefeatures (historisch gemiddelde, spreiding, piekindex) in plaats van enkel globale features."
+16,eda_01_global_descriptives.ipynb,## Implications for feature engineering,4,Neem noemercontext op: capaciteit en eventuele capaciteitswijzigingen als expliciete features/flags.
+17,eda_01_global_descriptives.ipynb,## Implications for feature engineering,5,Overweeg niet-lineaire transformaties of bounded-target-benaderingen bij modelkeuze door de ratio-eigenschappen van de target.
+18,eda_02_temporal_patterns.ipynb,## Key findings,1,"De data tonen duidelijke daily en weekly temporal structuur, met sterke signalen rond 24u en 168u."
+19,eda_02_temporal_patterns.ipynb,## Key findings,2,Tijdsdynamiek verschilt tussen shortterm en longterm; uniforme tijdsbehandeling is dus risicovol.
+20,eda_02_temporal_patterns.ipynb,## Key findings,3,"Jaarverschillen zijn substantieel en beïnvloeden niveau, piekgedrag en profielvergelijking."
+21,eda_02_temporal_patterns.ipynb,## Key findings,4,"Seizoensdifferentiatie maakt stationariteitstests consistenter, wat nuttig is voor latere modeldiagnostiek."
+22,eda_02_temporal_patterns.ipynb,## Implications for feature engineering,1,Prioriteer cyclische tijdsfeatures en seizoenslags als basisset.
+23,eda_02_temporal_patterns.ipynb,## Implications for feature engineering,2,Voeg jaar/regime-indicatoren en interacties met locatie/tier toe om structurele heterogeniteit op te vangen.
+24,eda_02_temporal_patterns.ipynb,## Implications for feature engineering,3,Overweeg dataset-specifieke feature pipelines (shortterm versus longterm).
+25,eda_02_temporal_patterns.ipynb,## Implications for feature engineering,4,Gebruik kwaliteitsflags uit `eda_00` als sensitiviteitslaag in feature-evaluatie.
+26,eda_03_spatial_patterns.ipynb,## Key findings,1,"Centrum versus outer geeft een duidelijk niveauverschil in bezetting, maar binnen-tier heterogeniteit blijft groot."
+27,eda_03_spatial_patterns.ipynb,## Key findings,2,Capaciteit verklaart bezetting niet uniform over datasets; relationele richting is datasetafhankelijk.
+28,eda_03_spatial_patterns.ipynb,## Key findings,3,Parkingprofielen clusteren slechts gedeeltelijk per tier: parking-specifieke modellering lijkt noodzakelijk.
+29,eda_03_spatial_patterns.ipynb,## Key findings,4,"Event- en saturatiepatronen tonen relevante spatial interacties, maar met beperkte causaliteitszekerheid."
+30,eda_03_spatial_patterns.ipynb,## Implications for feature engineering,1,"Combineer coarse spatial features (`tier`, `location_category`) met parking-level statistische profielen."
+31,eda_03_spatial_patterns.ipynb,## Implications for feature engineering,2,"Voeg interactiefeatures toe: `event × tier`, `event × parking`, `time × tier`."
+32,eda_03_spatial_patterns.ipynb,## Implications for feature engineering,3,Ontwikkel saturatie-/pressure-indicatoren op systeemniveau (centrumdruk) als kandidaatspilloverfeatures.
+33,eda_03_spatial_patterns.ipynb,## Implications for feature engineering,4,Gebruik dataset-specifieke feature treatment voor shortterm en longterm waar spatial relaties uiteenlopen.
+34,eda_04_external_factors.ipynb,## Key findings,1,Externe drivers zijn relevant maar sterk contextafhankelijk; één globale lineaire effectstructuur is onvoldoende.
+35,eda_04_external_factors.ipynb,## Key findings,2,Wind en bepaalde calendar/eventsignalen zijn robuuster dan neerslag- en zonneschijneffecten.
+36,eda_04_external_factors.ipynb,## Key findings,3,Temperatuur werkt duidelijk interactief met seizoen en dataset.
+37,eda_04_external_factors.ipynb,## Key findings,4,"Eventeffecten zijn heterogeen in teken en grootte, met duidelijke confoundingrisico's."
+38,eda_04_external_factors.ipynb,## Implications for feature engineering,1,Gebruik niet-lineaire transformaties (bins/splines) voor weerfeatures in plaats van enkel lineaire termen.
+39,eda_04_external_factors.ipynb,## Implications for feature engineering,2,"Voeg systematisch interactietermen toe: `weather × season`, `event × tier`, `holiday × tier`, `external × dataset`."
+40,eda_04_external_factors.ipynb,## Implications for feature engineering,3,Behandel shortterm en longterm als aparte feature-contexten.
+41,eda_04_external_factors.ipynb,## Implications for feature engineering,4,Voeg kwaliteitscontext toe (`data_confidence`) in sensitiviteitsanalyses van eventfeatures.
+42,eda_05_shortterm_vs_longterm.ipynb,## Hypothese-overzicht,1,**H-LT1**: supported. `shortterm` en `longterm` tonen structureel verschillende bezettingsregimes.
+43,eda_05_shortterm_vs_longterm.ipynb,## Hypothese-overzicht,2,**H-LT2**: supported. Verschillen blijven zichtbaar in de faire vergelijking (2024 + common parkings).
+44,eda_05_shortterm_vs_longterm.ipynb,## Hypothese-overzicht,3,"**H-LT3**: partially supported. `longterm` heeft lagere `std` en piekfrequentie, maar niet consequent lagere IQR."
+45,eda_05_shortterm_vs_longterm.ipynb,## Hypothese-overzicht,4,"**H-LT4**: partially to strongly supported. Externe gevoeligheid is gemiddeld lager in LT (vooral weather), maar niet uniform per driver."
+46,eda_05_shortterm_vs_longterm.ipynb,## Hypothese-overzicht,5,**H-LT5**: supported. Temporal memory en correlatiestructuur verschillen duidelijk.
+47,eda_05_shortterm_vs_longterm.ipynb,## Hypothese-overzicht,6,"**H-LT6**: supported. LT is methodologisch onvoldoende sterk voor primaire Phase 3/4-modellering, maar bruikbaar als secundaire robustness-track."
+48,eda_05_shortterm_vs_longterm.ipynb,## Key findings,1,"ST en LT vormen verschillende gedragsregimes, ook onder faire vergelijkingsrestricties."
+49,eda_05_shortterm_vs_longterm.ipynb,## Key findings,2,LT heeft doorgaans lagere piekintensiteit en andere dynamiek-/responsstructuur dan ST.
+50,eda_05_shortterm_vs_longterm.ipynb,## Key findings,3,Externe effecten zijn niet stabiel overdraagbaar tussen ST en LT.
+51,eda_05_shortterm_vs_longterm.ipynb,## Key findings,4,"LT (1 jaar, beperkte en oneven coverage) is zwak als primaire modelbasis voor de thesis-hoofdtrack."
+52,eda_05_shortterm_vs_longterm.ipynb,## Implications for feature engineering,1,Bouw de primaire feature pipeline voor shortterm en gebruik LT enkel secundair.
+53,eda_05_shortterm_vs_longterm.ipynb,## Implications for feature engineering,2,"Gebruik gedeelde featurefamilies, maar met dataset-specifieke interacties/regularisatie."
+54,eda_05_shortterm_vs_longterm.ipynb,## Implications for feature engineering,3,Leg fairness-scopes vast (tijd + parkingoverlap) voor elke ST-LT vergelijking in volgende notebooks.
+55,eda_05_shortterm_vs_longterm.ipynb,## Implications for feature engineering,4,Voeg coverage- en representativiteitschecks als vaste rapporteringslaag toe.
+56,eda_06_interactions_and_hypothesis_synthesis.ipynb,## EDA decisions that must carry forward into Phase 3,1,Gebruik `shortterm` als primaire modeltrack; behandel `longterm` als secundaire robustness/transfer-track.
+57,eda_06_interactions_and_hypothesis_synthesis.ipynb,## EDA decisions that must carry forward into Phase 3,2,Houd het quality-filter uit `eda_00` als standaard voor inferentierelevante analyses.
+58,eda_06_interactions_and_hypothesis_synthesis.ipynb,## EDA decisions that must carry forward into Phase 3,3,Behoud een fairness-scope (`2024 + common parkings`) voor elke expliciete ST-LT vergelijking.
+59,eda_06_interactions_and_hypothesis_synthesis.ipynb,## EDA decisions that must carry forward into Phase 3,4,"Modelleer interacties expliciet: minimaal `event x tier`, `weather x season`, `event x hour`."
+60,eda_06_interactions_and_hypothesis_synthesis.ipynb,## EDA decisions that must carry forward into Phase 3,5,Gebruik niet-lineaire weatherrepresentaties (bins/splines) in plaats van enkel lineaire termen.
+61,eda_06_interactions_and_hypothesis_synthesis.ipynb,## EDA decisions that must carry forward into Phase 3,6,Rapporteer consequent effectgrootte naast p-waarden; gebruik FDR-correctie bij families van toetsen.
+62,eda_06_interactions_and_hypothesis_synthesis.ipynb,## EDA decisions that must carry forward into Phase 3,7,Prioriteer features met zowel statistische als praktische relevantie.
+63,eda_06_interactions_and_hypothesis_synthesis.ipynb,## EDA decisions that must carry forward into Phase 3,8,Vermijd overmatige feature-sharing tussen ST en LT; laat dataset-specifieke parameterisatie toe.
+64,eda_06_interactions_and_hypothesis_synthesis.ipynb,## EDA decisions that must carry forward into Phase 3,9,Neem coverage- en representativiteitsdiagnostiek op als vaste modelgovernancecheck.
+65,eda_06_interactions_and_hypothesis_synthesis.ipynb,## EDA decisions that must carry forward into Phase 3,10,Behoud een sensitiviteitslaag waarin zwakkere of instabiele interacties optioneel uitgeschakeld kunnen worden.
+66,eda_06_interactions_and_hypothesis_synthesis.ipynb,## Key findings,1,"Interacties zijn centraal, niet marginaal: tier, tijd en externe drivers moduleren occupancy gelijktijdig."
+67,eda_06_interactions_and_hypothesis_synthesis.ipynb,## Key findings,2,"ST en LT vertonen verschillende responsstructuren, ook in een strikte fair scope."
+68,eda_06_interactions_and_hypothesis_synthesis.ipynb,## Key findings,3,"Veel effecten zijn statistisch detecteerbaar, maar slechts een subset is praktisch groot genoeg voor robuuste featurekeuzes."
+69,eda_06_interactions_and_hypothesis_synthesis.ipynb,## Key findings,4,"De EDA-synthese ondersteunt een ST-gedreven Phase 3 met interactie-rijke, segmentbewuste feature engineering."
+70,eda_06_interactions_and_hypothesis_synthesis.ipynb,## Implications for feature engineering,1,Bouw een interaction-first feature set met gecontroleerde complexiteit (regularisatie + stabiliteitschecks).
+71,eda_06_interactions_and_hypothesis_synthesis.ipynb,## Implications for feature engineering,2,Maak weatherfeatures seizoensafhankelijk en bij voorkeur niet-lineair gecodeerd.
+72,eda_06_interactions_and_hypothesis_synthesis.ipynb,## Implications for feature engineering,3,Modelleer eventimpact tijdsafhankelijk (hour/event windows) en ruimtelijk gedifferentieerd (tier/parking).
+73,eda_06_interactions_and_hypothesis_synthesis.ipynb,## Implications for feature engineering,4,"Gebruik LT niet als primaire trainingsbasis, maar als aanvullende validatielaag voor overdraagbaarheid."
+74,eda_06_interactions_and_hypothesis_synthesis.ipynb,## Implications for feature engineering,5,Veranker multiple-testing en effect-size rapportage in de feature-selectieprocedure.

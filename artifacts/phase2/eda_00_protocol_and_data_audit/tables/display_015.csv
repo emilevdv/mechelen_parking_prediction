@@ -1,0 +1,3 @@
+,derived_inconsistent,derived_inconsistent_pct,derived_overcapacity,derived_overcapacity_pct,flag_frozen_sensor,flag_frozen_sensor_pct,flag_occ_inconsistent,flag_occ_inconsistent_pct,flag_overcapacity,flag_overcapacity_pct,low_data_coverage,low_data_coverage_pct,n_rows,occupancy_rate_outside_0_1,occupancy_rate_outside_0_1_pct,partial_year,partial_year_pct,system_blackout,system_blackout_pct
+shortterm,0.0,0.0,0.0,0.0,24392.0,8.57291476290225,0.0,0.0,0.0,0.0,26397.0,9.277600483614739,284524.0,0.0,0.0,7690.0,2.702759696897274,2564.0,0.9011542084323291
+longterm,0.0,0.0,0.0,0.0,4112.0,8.81589949188517,0.0,0.0,,,0.0,0.0,46643.0,0.0,0.0,0.0,0.0,0.0,0.0

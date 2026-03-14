@@ -1,0 +1,3 @@
+dataset_label,mean_centrum_minus_rand,max_centrum_minus_rand,min_centrum_minus_rand
+longterm,0.1962,0.2884,0.145
+shortterm,0.0548,0.1494,-0.0625

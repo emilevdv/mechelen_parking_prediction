@@ -1,0 +1,8 @@
+parking_id,P Grote Markt,P Hoogstraat,P Kathedraal,P Keerdok,P Komet,P Maarten,P Tinel
+P Grote Markt,1.0,0.864,0.98,0.749,0.408,0.18,0.927
+P Hoogstraat,0.864,1.0,0.882,0.881,0.715,0.403,0.935
+P Kathedraal,0.98,0.882,1.0,0.762,0.43,0.165,0.951
+P Keerdok,0.749,0.881,0.762,1.0,0.822,0.416,0.804
+P Komet,0.408,0.715,0.43,0.822,1.0,0.574,0.517
+P Maarten,0.18,0.403,0.165,0.416,0.574,1.0,0.227
+P Tinel,0.927,0.935,0.951,0.804,0.517,0.227,1.0

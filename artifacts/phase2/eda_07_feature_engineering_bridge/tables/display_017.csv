@@ -1,0 +1,6 @@
+,artifact,path,n_rows
+0,train_parquet,/Users/emilevandevoorde/Documents/mp_mechelen_parking_v2/data_processed/phase3_splits/MAD_shortterm_train_2020_2023_2024.parquet,129837
+1,holdout_parquet,/Users/emilevandevoorde/Documents/mp_mechelen_parking_v2/data_processed/phase3_splits/MAD_shortterm_holdout_2025.parquet,87600
+2,excluded_2019_parquet,/Users/emilevandevoorde/Documents/mp_mechelen_parking_v2/data_processed/phase3_splits/MAD_shortterm_excluded_2019.parquet,33000
+3,cv_plan_csv,/Users/emilevandevoorde/Documents/mp_mechelen_parking_v2/data_processed/phase3_splits/shortterm_train_rolling_cv_plan.csv,3
+4,split_summary_csv,/Users/emilevandevoorde/Documents/mp_mechelen_parking_v2/data_processed/phase3_splits/shortterm_operational_split_summary.csv,2

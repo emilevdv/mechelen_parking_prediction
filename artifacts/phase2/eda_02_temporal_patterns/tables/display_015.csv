@@ -1,0 +1,9 @@
+series,missing_pct_before_fill,acf_lag_24,acf_lag_168,n_obs_after_fill
+shortterm_global,28.8,0.8362,0.8635,61368
+shortterm_tier_centrum,34.4333,0.8123,0.8584,61368
+shortterm_tier_vesten_of_rand,29.2302,0.8033,0.7782,61368
+longterm_global,0.0,0.7336,0.7688,8783
+longterm_tier_centrum,0.0342,0.7134,0.6909,8783
+longterm_tier_vesten_of_rand,0.0569,0.7251,0.7592,8783
+shortterm_parking_P_Grote_Markt,45.4879,0.8695,0.9053,61368
+shortterm_parking_P_Keerdok,1.3503,0.787,0.6948,25920

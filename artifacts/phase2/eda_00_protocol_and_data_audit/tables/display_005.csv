@@ -1,0 +1,17 @@
+,shortterm,longterm,all_datasets
+parking_id,True,True,True
+parking_type,True,True,True
+kind,True,True,True
+year,True,True,True
+month,True,True,True
+date_only,True,True,True
+rounded_hour,True,True,True
+hour,True,True,True
+number_of_spaces_override,True,True,True
+number_of_occupied_spaces,True,True,True
+occupancy_rate,True,True,True
+flag_occ_inconsistent,True,True,True
+flag_frozen_sensor,True,True,True
+low_data_coverage,True,True,True
+system_blackout,True,True,True
+partial_year,True,True,True

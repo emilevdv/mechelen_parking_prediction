@@ -1,0 +1,9 @@
+,flag_col,n_true,n_false,mean_true,mean_false,delta_true_minus_false,dataset_label,month_adjusted_delta
+0,is_any_holiday,14544,235893,0.35566,0.38377,-0.02811,shortterm,-0.02976
+1,is_national_holiday,7056,243381,0.33228,0.38359,-0.05131,shortterm,-0.05317
+2,is_other_holiday,8397,242040,0.36801,0.38263,-0.01462,shortterm,-0.02116
+3,is_school_vacation,60216,190221,0.36757,0.38675,-0.01918,shortterm,-0.02135
+4,is_any_holiday,3138,43505,0.4154,0.43878,-0.02337,longterm,-0.06357
+5,is_national_holiday,1580,45063,0.3774,0.4393,-0.0619,longterm,-0.08941
+6,is_other_holiday,1702,44941,0.45441,0.43655,0.01785,longterm,-0.03222
+7,is_school_vacation,14195,32448,0.39979,0.45358,-0.05379,longterm,-0.04004

@@ -1,0 +1,4 @@
+rule,value,detail
+high_variability_trigger,10,count of fold-safe runs with std(MAE)/mean(MAE) > 0.15
+refinement_runs_added,4,limited targeted reruns added only when variability exceeded threshold
+f4_keep_rule,0,F4 gain=10.850% vs F2; retention=21.421%

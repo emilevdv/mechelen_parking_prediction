@@ -1,0 +1,3 @@
+dataset_label,r2_hour_only,r2_hour_weekday,incremental_r2_weekday_given_hour,daily_amplitude_max_minus_min,power_share_24h_pct,power_share_168h_pct
+shortterm,0.1052,0.1277,0.0225,0.2697,58.9135,3.782
+longterm,0.0422,0.0616,0.0195,0.1393,37.1644,12.835

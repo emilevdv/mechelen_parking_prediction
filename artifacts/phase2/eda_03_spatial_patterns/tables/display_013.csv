@@ -1,0 +1,5 @@
+,pair_type,count,mean,median,std,dataset_label
+0,between_tier,25,0.2688,0.2405,0.1866,shortterm
+1,within_tier,20,0.3402,0.3264,0.2627,shortterm
+2,between_tier,12,0.2732,0.2874,0.211,longterm
+3,within_tier,9,0.3328,0.3415,0.2084,longterm

@@ -1,3 +1,0 @@
-tier,niveau_0_adf_p,niveau_0_kpss_p,niveau_0_adf_reject,niveau_0_kpss_reject,niveau_0_conclusion,delta_1_adf_p,delta_1_kpss_p,delta_1_adf_reject,delta_1_kpss_reject,delta_1_conclusion,delta_24_adf_p,delta_24_kpss_p,delta_24_adf_reject,delta_24_kpss_reject,delta_24_conclusion,H_T3_confirmed,differentiatie_needed,recommended_diff
-centrum,0.0,0.01,True,True,TREND-STATIONAIR (differentiatie aanbevolen),0.0,0.1,True,False,STATIONAIR,0.0,0.1,True,False,STATIONAIR,True,False,Δ₂₄
-vesten_of_rand,0.0,0.01,True,True,TREND-STATIONAIR (differentiatie aanbevolen),0.0,0.1,True,False,STATIONAIR,0.0,0.1,True,False,STATIONAIR,True,False,Δ₂₄

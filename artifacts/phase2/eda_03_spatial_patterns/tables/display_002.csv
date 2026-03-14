@@ -1,0 +1,18 @@
+,dataset_label,parking_id,parking_location_category,tier_temporal,latitude,longitude,total_capacity,spaces_override_nunique,n_obs,mean_occupancy,median_occupancy,std_occupancy,q95_occupancy
+0,longterm,P Grote Markt,centrum,centrum,51.0282,4.4794,155.0,1,8471,0.3794,0.35,0.2466,0.85
+1,longterm,P Hoogstraat,centrum,centrum,51.0235,4.4747,109.0,1,8483,0.6832,0.74,0.1928,0.92
+2,longterm,P Kathedraal,centrum,centrum,51.0295,4.478,130.0,1,8727,0.3806,0.3833,0.1091,0.5667
+3,longterm,P Keerdok,rand,vesten_of_rand,51.0347,4.4701,516.0,1,8750,0.2843,0.26,0.096,0.48
+4,longterm,P Komet,vesten,vesten_of_rand,51.0243,4.4705,124.0,1,5962,0.7203,0.7812,0.22,0.9531
+5,longterm,P Maarten,vesten,vesten_of_rand,51.0202,4.4771,189.0,1,5948,0.1892,0.1739,0.0895,0.3913
+6,longterm,P Tinel,vesten,vesten_of_rand,51.0335,4.4822,124.0,1,302,0.5101,0.5385,0.3421,0.9487
+8,shortterm,P Grote Markt,centrum,centrum,51.0282,4.4794,155.0,2,33453,0.4824,0.4222,0.3157,1.0
+9,shortterm,P Hoogstraat,centrum,centrum,51.0235,4.4747,109.0,2,21714,0.2929,0.225,0.2299,0.78
+10,shortterm,P Kathedraal,centrum,centrum,51.0295,4.478,130.0,2,21133,0.4769,0.4143,0.344,1.0
+13,shortterm,P Lamot,centrum,centrum,51.0254,4.4768,255.0,3,30267,0.467,0.4361,0.2244,0.8638
+16,shortterm,P Veemarkt,centrum,centrum,51.0297,4.4836,129.0,5,29362,0.4759,0.4444,0.2819,0.9495
+11,shortterm,P Keerdok,rand,vesten_of_rand,51.0347,4.4701,516.0,1,25570,0.3882,0.363,0.1813,0.7067
+7,shortterm,P Bruul,vesten,vesten_of_rand,51.0212,4.4845,350.0,3,30114,0.2143,0.1345,0.2082,0.5886
+12,shortterm,P Komet,vesten,vesten_of_rand,51.0243,4.4705,124.0,1,11886,0.2304,0.2167,0.164,0.55
+14,shortterm,P Maarten,vesten,vesten_of_rand,51.0202,4.4771,189.0,2,14704,0.0968,0.0688,0.0996,0.2917
+15,shortterm,P Tinel,vesten,vesten_of_rand,51.0335,4.4822,124.0,3,32234,0.4492,0.4118,0.2748,0.9833

@@ -108,10 +108,53 @@ def merge_quality_report(df: pd.DataFrame, name: str) -> None:
         if "parking_location_category" in df.columns
         else -1
     )
+    weather_cols = [
+        c
+        for c in ["temp_c", "precip_mm", "wind_speed_ms", "wind_gusts_ms", "humidity_pct", "pressure_hpa"]
+        if c in df.columns
+    ]
+    cal_cols = [
+        c
+        for c in [
+            "is_national_holiday",
+            "is_other_holiday",
+            "is_any_holiday",
+            "is_school_vacation",
+            "calendar_day_class",
+        ]
+        if c in df.columns
+    ]
+    expected_event_cols = [
+        "is_event_day",
+        "is_football_day",
+        "is_sport_day",
+        "is_festival_day",
+        "is_procession_day",
+        "is_kermis_day",
+        "is_markt_day",
+        "is_carnival_day",
+        "is_other_day",
+        "event_scale_max",
+        "n_concurrent_events",
+    ]
+    present_event_cols = [c for c in expected_event_cols if c in df.columns]
+    missing_event_cols = [c for c in expected_event_cols if c not in df.columns]
+    n_nan_weather_any = int(df[weather_cols].isna().any(axis=1).sum()) if weather_cols else -1
+    n_nan_calendar_any = int(df[cal_cols].isna().any(axis=1).sum()) if cal_cols else -1
+    n_nan_event_any = int(df[present_event_cols].isna().any(axis=1).sum()) if present_event_cols else -1
+
     print(f"MERGE-KWALITEITSRAPPORT — {name}")
     print(f"  rows                     : {n_rows:,}")
     print(f"  NaN occupancy_rate       : {n_nan_occ:,}")
     print(f"  NaN parking_location_cat : {n_nan_loc:,}")
+    if weather_cols:
+        print(f"  NaN in weather core (rows): {n_nan_weather_any:,}")
+    if cal_cols:
+        print(f"  NaN in calendar core (rows): {n_nan_calendar_any:,}")
+    if present_event_cols:
+        print(f"  NaN in event core (rows)  : {n_nan_event_any:,}")
+        if missing_event_cols:
+            print(f"  Ontbrekende eventkolommen : {missing_event_cols}")
 
 
 def export_mad_outputs(paths, df_loc_clean: pd.DataFrame, mad_st: pd.DataFrame, mad_lt: pd.DataFrame):

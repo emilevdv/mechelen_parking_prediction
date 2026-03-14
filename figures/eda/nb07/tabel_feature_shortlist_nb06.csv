@@ -1,6 +1,0 @@
-Feature,Type,Encoding,Basis,Prioriteit,Referentie
-parking_id,Categorisch,One-hot (10 parkings) OF parking_embedding,H-S1/S2: sterke heterogeniteit tussen parkings,🔴 HOOG,Wang & Li (2024)
-tier,Categorisch / Stratificatie,One-hot OF aparte modellen per tier,H-S3 onzeker: intra-tier r=0.413,🔴 HOOG,Yang et al. (2019); Zhou et al. (2024)
-total_capacity,Continu,Gestandaardiseerd (z-score) of log-getransformeerd,H-S2: Spearman ρ=-0.109 (zwak),🟢 LAAG,Wang & Li (2024); Sun et al. (2023)
-is_event_day + event_type_dummies,Binair,"Aparte dummy per event-type (football, festival, etc.)",H-S4 gedeeltelijk: Δr_rb=-0.007,🟡 MEDIUM,Fokker et al. (2021); Channamallu et al. (2024)
-tier × is_event_day (interactie),Interactieterm,Product van tier-dummy en event-dummy,"H-S4: het eventeffect is tier-specifiek (Δr_rb=-0.007, p=0.632)",🟡 MEDIUM,Wang & Li (2024); Fischer (1921)

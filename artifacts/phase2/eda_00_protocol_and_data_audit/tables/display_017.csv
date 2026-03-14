@@ -1,0 +1,7 @@
+column,dtype,missing_pct,true_count,false_count
+qc_temp,bool,0.0,46538,105
+qc_precip,bool,0.0,46590,53
+qc_wind_speed,bool,0.0,46538,105
+qc_wind_gusts,bool,0.0,46538,105
+qc_humidity,bool,0.0,44166,2477
+qc_pressure,bool,0.0,46489,154

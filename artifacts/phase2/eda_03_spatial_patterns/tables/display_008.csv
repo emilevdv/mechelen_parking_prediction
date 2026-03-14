@@ -1,0 +1,3 @@
+dataset_label,row_level_spearman_rho,row_level_spearman_p,parking_level_spearman_rho,parking_level_spearman_p,theil_sen_slope_parking_level,theil_sen_slope_low,theil_sen_slope_high
+shortterm,-0.055475,0.0,-0.097265,0.789235,3.3e-05,-0.001184,0.001806
+longterm,-0.63967,0.0,-0.900937,0.005621,-0.004577,-0.011541,-0.00025

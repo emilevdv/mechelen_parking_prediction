@@ -1,0 +1,3 @@
+,operational_split,min_rows_per_parking,median_rows_per_parking,max_rows_per_parking
+0,holdout,8760,8760.0,8760
+1,train,3126,13483.5,19044

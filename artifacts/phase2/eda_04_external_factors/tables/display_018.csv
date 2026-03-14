@@ -1,0 +1,11 @@
+,dataset_label,lag_days_vs_event,n_window_days,n_baseline_days,delta_vs_far_non_event_days
+0,shortterm,-2,2882,5692,-0.015
+1,shortterm,-1,2882,5692,-0.0119
+2,shortterm,0,2882,5692,-0.004
+3,shortterm,1,2881,5692,0.0026
+4,shortterm,2,2879,5692,-0.0043
+5,longterm,-2,629,593,-0.043
+6,longterm,-1,629,593,-0.0584
+7,longterm,0,629,593,-0.0678
+8,longterm,1,629,593,-0.0553
+9,longterm,2,625,593,-0.0491

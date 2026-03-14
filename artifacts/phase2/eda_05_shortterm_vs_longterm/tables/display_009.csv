@@ -1,0 +1,7 @@
+,scope,dataset,n_hours,missing_pct_before_fill,acf_24,acf_168
+0,full_context,shortterm,61368,28.80003,0.83624,0.86347
+1,full_context,longterm,8783,0.0,0.73362,0.76881
+2,year2024,shortterm,8784,0.0,0.76802,0.83385
+3,year2024,longterm,8783,0.0,0.73362,0.76881
+4,year2024_common_parkings,shortterm,8784,0.0,0.77746,0.83587
+5,year2024_common_parkings,longterm,8783,0.0,0.73362,0.76881

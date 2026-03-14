@@ -1,0 +1,17 @@
+,dataset_label,variable,rho_raw,p_raw,n_raw,rho_month_centered,p_month_centered,n_month_centered
+0,shortterm,temp_c,0.07472,0.0,217437,0.132314,0.0,217437
+1,shortterm,precip_mm,-0.007952,0.000209,217437,-0.00899,2.8e-05,217437
+2,shortterm,wind_speed_ms,0.10156,0.0,217437,0.099603,0.0,217437
+3,shortterm,wind_gusts_ms,0.106956,0.0,217437,0.10487,0.0,217437
+4,shortterm,humidity_pct,-0.156663,0.0,217437,-0.180978,0.0,217437
+5,shortterm,sun_duration_min,0.161798,0.0,217437,0.155792,0.0,217437
+6,shortterm,shortwave_wm2,0.225591,0.0,217437,0.209997,0.0,217437
+7,shortterm,sun_intensity_wm2,0.214598,0.0,217437,0.168227,0.0,217437
+8,longterm,temp_c,-0.092813,0.0,46643,0.074701,0.0,46643
+9,longterm,precip_mm,0.02631,0.0,46643,-1.9e-05,0.996744,46643
+10,longterm,wind_speed_ms,0.124935,0.0,46643,0.087401,0.0,46643
+11,longterm,wind_gusts_ms,0.119763,0.0,46643,0.08708,0.0,46643
+12,longterm,humidity_pct,-0.074138,0.0,46643,-0.11422,0.0,46643
+13,longterm,sun_duration_min,0.072605,0.0,46643,0.09548,0.0,46643
+14,longterm,shortwave_wm2,0.146444,0.0,46643,0.155369,0.0,46643
+15,longterm,sun_intensity_wm2,0.13951,0.0,46643,0.104817,0.0,46643

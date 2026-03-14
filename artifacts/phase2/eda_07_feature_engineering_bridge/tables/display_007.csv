@@ -1,0 +1,10 @@
+,guardrail,regel,waarom,actie bij schending
+0,Hard quality filter,"exclude system_blackout, low_data_coverage, partial_year, flag_occ_inconsistent",EDA 00 toonde verhoogd interpretatierisico bij deze flags,rijen uit inferentie-/trainset verwijderen
+1,Bounded target integrity,"occupancy_rate moet in [0,1] liggen",Fysische plausibiliteit en modelstabiliteit,rijen verwijderen of broncontrole
+2,Strict temporal causality,alle lags/rolling features alleen uit historisch verleden,vermijdt tijdslekkage,feature herberekenen met causale window
+3,Train-only fit van transformaties,bins/splines/encoders alleen op train fitten,voorkomt informatielek naar CV-folds en holdout,pipeline herfitten met correcte volgorde
+4,Split integrity,geen overlap in timestamps tussen train en holdout,zuivere finale evaluatie,splits opnieuw definiëren
+5,CV integrity in train,rolling/blocked CV gebruikt alleen validatievensters die na het trainvenster liggen,kritische maar leakage-safe modelselectie,fold-definitie corrigeren
+6,Event-data availability check,enkel eventfeatures gebruiken die ex ante beschikbaar zijn,operationele realisme,feature downgraden of verwijderen
+7,Weather quality context,"monitor imputation/suspect flags (precip_imputed, humidity_suspect, sun_duration_inconsistent)",stabiliteit van weatherfeatures,sensitiviteitsanalyse en robuustheidsrapport
+8,Entity coverage minimum,minimum observatievolume per parking in train en holdout,voorkomt instabiele entity-effecten,"pooling, regularisatie of uitsluiting"

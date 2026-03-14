@@ -1,9 +1,0 @@
-Tier,Hypothese,Verwachting,Bevinding,Status,Referentie
-centrum,H-T1,"Bimodaal weekdag, unimodaal weekend","3 weekdagpieken op uren [(9, np.float64(0.4638)), (12, np.float64(0.453)), (18, np.float64(0.4301))]; 2 weekendpiek(en)",❌ VERWORPEN,Zhang et al. (2020); Channamallu et al. (2024)
-centrum,H-T2,ACF-pieken sig. op lag 24 én lag 168,"ACF lag24=-0.3776 (sig.), lag168=0.3446 (sig.)",✅ BEVESTIGD,Fokker et al. (2021); Wan et al. (2023)
-centrum,H-T3,Stationair na Δ₂₄ (ADF p<0.05),Ruw: TREND-STATIONAIR (differentiatie aanbevolen) | Δ₂₄: STATIONAIR (ADF p=0.0),✅ BEVESTIGD,Kwiatkowski et al. (1992); Bergmeir & Benitez (2012)
-centrum,H-T4,2020 niveaulager + structureel gelijk aan 2023,"Δ=-5.7%, MW p=0.00e+00, effect=klein, r_struct=-0.9565",❌ VERWORPEN,Niu et al. (2023)
-vesten_of_rand,H-T1,"Bimodaal weekdag, unimodaal weekend","2 weekdagpieken op uren [(13, np.float64(0.4003)), (19, np.float64(0.332))]; 1 weekendpiek(en)",✅ BEVESTIGD,Zhang et al. (2020); Channamallu et al. (2024)
-vesten_of_rand,H-T2,ACF-pieken sig. op lag 24 én lag 168,"ACF lag24=-0.3836 (sig.), lag168=0.2413 (sig.)",✅ BEVESTIGD,Fokker et al. (2021); Wan et al. (2023)
-vesten_of_rand,H-T3,Stationair na Δ₂₄ (ADF p<0.05),Ruw: TREND-STATIONAIR (differentiatie aanbevolen) | Δ₂₄: STATIONAIR (ADF p=0.0),✅ BEVESTIGD,Kwiatkowski et al. (1992); Bergmeir & Benitez (2012)
-vesten_of_rand,H-T4,2020 niveaulager + structureel gelijk aan 2023,"Δ=+18.6%, MW p=0.00e+00, effect=medium, r_struct=0.3014",❌ VERWORPEN,Niu et al. (2023)

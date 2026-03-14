@@ -1,0 +1,7 @@
+column,dtype,missing_pct,true_count,false_count
+qc_temp,object,14.218484205198859,242714,1355
+qc_precip,object,14.218484205198859,243055,1014
+qc_wind_speed,object,14.218484205198859,243215,854
+qc_wind_gusts,object,14.218484205198859,243209,860
+qc_humidity,object,14.218484205198859,188662,55407
+qc_pressure,object,14.218484205198859,243251,818
